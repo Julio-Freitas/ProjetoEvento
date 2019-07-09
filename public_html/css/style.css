@@ -3,3 +3,11 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+.box {
+    border-radius: 4px;
+    margin-bottom: 2em;
+    background: #2c2c32;
+    text-align: center;
+}
+
