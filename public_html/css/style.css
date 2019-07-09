@@ -14,9 +14,44 @@ html, body{
     text-align: center;
 }
 
+.banner-style{
+display: flex;
+margin-left: auto;
+margin-right: auto;
+}
+
 #about{
     background-color: #639d56;
 }
 footer{
     background-color: #000;
+}
+
+nav{
+    display: flex;
+    width: 100%;
+    margin-left: auto;
+margin-right: auto;
+flex-direction: row;
+}
+
+a:hover{
+    border-bottom: 2px solid white;
+}
+
+nav a{
+    padding: 2vw;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    color: black;
+    text-decoration: none;
+    margin-right: auto;
+    margin-left: auto;
+    justify-content: center;
+}
+
+@media screen and (max-width: 750px) {
+    nav a{
+font-size: 15px;
+    }
 }
