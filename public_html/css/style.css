@@ -3,6 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+html, body{
+    height: 100%;
+}
 
 .box {
     border-radius: 4px;
@@ -13,4 +16,7 @@
 
 #about{
     background-color: #639d56;
+}
+footer{
+    background-color: #000;
 }
