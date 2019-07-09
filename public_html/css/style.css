@@ -10,7 +10,16 @@ html, body{
 img{
     max-width: 100%;
 }
-
+.bg-black{
+    background-color: #000;
+}
+.logo{
+        width: 76px;
+}
+h1{
+    font-weight: bold;
+    font-size: 28px !important;
+}
 nav{
     text-align: center;
     padding: 20px 0;
@@ -20,15 +29,22 @@ nav a:hover{
     border-bottom: 2px solid white;
 }
 nav a{
-    padding: 0 17px;
-    font-size: 18px;
+    padding: 0 26px;
+    font-size: 19px;
     color: #000;
     text-decoration: none;
     font-weight: bolder;
     text-transform: uppercase;
 }
+.menu-toggle{
+    display:  none;
+}
 .banner {
     text-align: center;
+    background-image: url(../img/banner.png);
+    height: 500px;
+    background-position: center;
+    background-size: cover;
 }
 .banner img{
     width: 768px;
@@ -111,9 +127,51 @@ footer .social-link a > i{
     font-size: 25px
 }
 
-
-@media screen and (max-width: 750px) {
-    nav a{
-font-size: 15px;
+/** responsivo **/
+@media screen and (max-width: 768px) {
+    .menu-toggle{
+        position: relative;
+        top: -63px;
+        cursor: pointer;
+        display: inline-block;
+        left: 80%;
     }
+    .menu-toggle span {
+        width: 50px;
+        height: 5px;
+        border-radius: 3px;
+        margin: 8px 0;
+        display: block;
+        background-color: #fff;
+        
+    }
+    .banner img {
+        width: 100%;
+    }
+    nav.menu {
+        display: none;
+    }
+    nav a {
+        display: block;
+        padding: 10px 0;
+        position: relative;
+        top: -68px;
+    }
+    .flex{
+        flex-direction: column;
+    }
+
+    footer .logo {
+        width: 100%;
+        padding: 13px 0;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 568px){
+
+    #about .about-img {
+        flex: auto;
+    }
+
 }

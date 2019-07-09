@@ -1,4 +1,19 @@
+$(function(){
+   /** scroll  */
+   $('.scroll').click(function(event){
+        event.preventDefault();
+        $('html, body').animate({
+            scrollTop:$(this.hash).offset().top
+        },800)
+   });
 
+   $('.menu-toggle').click(function(){
+       $('nav.menu').slideToggle();
+   })
+})
+
+
+/*
 let url = 'https://api.sympla.com.br/public/v3/events';
 
 let headers = new Headers();
@@ -21,3 +36,5 @@ fetch(url, {method:'GET',
 function parseJSON(response) {
 return response.json()
 }
+
+*/
