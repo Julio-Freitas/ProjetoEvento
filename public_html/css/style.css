@@ -1,3 +1,4 @@
+/** geral **/
 *{
     margin: 0;
     padding: 0;
@@ -5,20 +6,24 @@
 }
 html, body{
     height: 100%;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Roboto' !important;
 }
+
 img{
     max-width: 100%;
 }
+
+/** cabeçalho **/
 .bg-black{
     background-color: #000;
 }
 .logo{
-        width: 76px;
+    width: 76px;
 }
 h1{
     font-weight: bold;
     font-size: 28px !important;
+    font-family: 'Open Sans' !important;
 }
 nav{
     text-align: center;
@@ -93,12 +98,16 @@ nav a{
     background-color: #639d56;
     padding: 50px 0;
 }
-.single-box{
+#speakers .flex {
+    align-items: flex-start;
+}
+.single-box {
     text-align: center;
-    padding: 0 15px;
+    padding: 15px;
+    flex: 1 1 300px;
 }
 .single-box img{
-    width: 150px;
+    width: 220px;
     margin-bottom: 10px;
 }
 .single-box p{
@@ -126,16 +135,37 @@ footer .social-link a > i{
     padding: 0 8px;
     font-size: 25px
 }
-
+/** Sympla **/
+#speakers-events {
+    padding: 50px 0;
+}
+#speakers-events h1{
+    font-size: 30px !important;
+    font-family: 'Open Sans' !important;
+    font-weight: bold;
+}
+#speakers-events #sympla-widget-577395{
+    max-width: 600px;
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+}
 /** responsivo **/
 @media screen and (max-width: 768px) {
+
+    .banner {
+       
+        height: 309px;
+    }
+
     .menu-toggle{
         position: relative;
-        top: -63px;
+        top: -73px;
         cursor: pointer;
         display: inline-block;
         left: 80%;
     }
+    
     .menu-toggle span {
         width: 50px;
         height: 5px;
@@ -169,7 +199,9 @@ footer .social-link a > i{
 }
 
 @media screen and (max-width: 568px){
-
+    .banner {
+        height: 260px;
+    }
     #about .about-img {
         flex: auto;
     }

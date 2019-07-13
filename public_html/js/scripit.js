@@ -10,7 +10,7 @@ $(function(){
    $('.menu-toggle').click(function(){
        $('nav.menu').slideToggle();
    })
-})
+});
 
 
 /*
@@ -37,4 +37,27 @@ function parseJSON(response) {
 return response.json()
 }
 
+
+let headers = new Headers();
+headers.append('Content-Type', 'application/json');
+headers.append('Accept', 'application/json');
+headers.append('s_token','f4b1cdb021e908423810debc0720b9075726d9863487f757f37b1dfdaf6050e5');
 */
+
+
+var url = 'https://api.sympla.com.br/public/v3/';
+fetch(url,{
+    header:{
+    'Content-Type' : 'application/json'
+},
+    method: 'GET',
+    mode: 'no-cors'
+})
+    .then(response => {
+    	return response.json();
+    })
+    .then( result => {
+        //const dados = result // tranformando em texto para jogar na tela
+        console.log(result);
+    }
+);
